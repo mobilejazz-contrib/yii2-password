@@ -15,7 +15,6 @@ use yii\base\InvalidConfigException;
 use yii\helpers\Html;
 use yii\helpers\Json;
 use yii\validators\Validator;
-use kartik\base\TranslationTrait;
 
 /**
  * StrengthValidator validates if the attribute value matches a specified set of password strength rules.
@@ -25,7 +24,7 @@ use kartik\base\TranslationTrait;
  */
 class StrengthValidator extends Validator
 {
-    use TranslationTrait;
+    use ExtendedTranslationTrait;
 
     // The valid preset constants
     const SIMPLE = 'simple';
